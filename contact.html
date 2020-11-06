@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+       <meta charset="utf-8">
+       <meta name="description" content="Contact page">
+       <link rel="stylesheet" type="text/css" href="/style/contact-style.css" media="screen" />
+       <title>Contact page</title>
+      <!-- This links the source to the google maps-->
+       <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe64BH_bWtdem0JdJo1iNLY6UDU1Sr02g&callback=initMap&libraries=&v=weekly" defer>
+      </script>
+       <script>
+     // Initialize and add the map
+         function initMap()
+         {
+           const ac = { lat: 45.747327, lng: 21.226194 };
+           const map = new google.maps.Map(document.getElementById("map"), {
+             zoom: 4,
+             center: ac,
+           });
+           // The marker, positioned at Uluru
+           const marker = new google.maps.Marker({
+             position: ac,
+             map: map,
+           });
+         }
+     </script>
+
+    </head>
+
+    <body>
+        <h1>Contact</h1>
+        <p> Feel free to contact us for any problems you encounter with our website, partnerships or website improvment ideas.</p>
+        <ul>
+            <li>E-mail: <strong>andrei@wad.com</strong></li>
+            <li>Phone: <strong>(+40)25 118 932</strong></li>
+        </ul>
+        <hr>
+        <div>
+          <p> You can find us here: </p>
+          <div id="map"></div>
+        </div>
+        <hr>
+        <footer>
+          <p>Address: <strong> V. Parvan, Nr. 7, Timisoara, Timis, Romania</strong></p>
+        </footer>
+    </body>
+
+</html>

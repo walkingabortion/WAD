@@ -1,0 +1,48 @@
+@media all and (min-width: 960px)
+{
+
+  h1{
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #e05177;
+  }
+  body{
+    background-image: url(indexBackground.png);
+    max-width: 100%;
+    height: auto;
+    background-color: #99ccff;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+
+    text-align: justify;
+  }
+
+  section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*need to make it symmetrical*/
+    padding: 20px;
+  }
+  article{
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(54, 235, 156, 0.2);
+  }
+  footer{
+    box-sizing: border-box;
+    padding: 15px;
+
+    display: flex;
+    color: blue;
+    justify-content: center;
+    font-size: 30px;
+  }
+}

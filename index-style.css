@@ -1,0 +1,111 @@
+@media all and (min-width: 960px)
+{
+  body{
+    background-image: url(indexBackground.png);
+    max-width: 100%;
+    height: auto;
+    background-color: #99ccff;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .topBox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-weight: bold;
+  }
+
+  .logo{
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-size: 50px;
+    background: rgba(3, 132, 252, 0.6);
+    display: inline-block;
+    float: left;
+    color: #e05177;
+    padding: 20px;
+  }
+
+  .signin{
+    display: inline-block;
+    float: right;
+    padding: 30px;
+  }
+
+  a {
+    box-sizing: border-box;
+    color: white;
+    font-weight: 350;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(3, 132, 252, 0.6);  /*tweak color*/
+    padding: 10px 20px 10px 20px; /*top right bottom left*/
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  a:hover {
+    background: rgba(3, 132, 252, 0.75); /*tweak color*/
+  }
+  .navigation{
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: none;
+    text-decoration: none;
+  }
+  .navigation ul{
+    border: 1px solid rgb(0, 85, 163); /*tweak color*/
+    padding: 0;
+    list-style: none; /*remove bullet lists*/
+    display: flex;  /*one line instead of multiple*/
+  }
+  .navigation li{
+    flex: 3; /*makes them occupy the whole width, not half of the screen*/
+  }
+
+  .topPicks{
+    display:block;
+    font-size: 35px;
+  }
+  section{ /*settings for both tables*/
+
+
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+
+  }
+  td, th{
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  th{
+    background-color: rgba(54, 235, 156, 0.5); /*89, 193, 222, 0.5*/
+  }
+  .tableTop3
+  {
+    padding: 10px 60px 10px 60px;
+  }
+  .columnTitles
+  {
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  .tableGeneral
+  {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .copyright{
+    text-align: right;
+    font-size: 15px;
+  }
+
+}
